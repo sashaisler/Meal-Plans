@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meal Plans Calculator</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <h1>Enter Your Meal Counts</h1>
+    <form id="mealForm">
+        <div>
+            <label for="Breakfast">Breakfast:</label>
+            <input type="number" id="Breakfast" name="Breakfast" min="0" value="0" required>
+        </div>
+        <div>
+            <label for="Lunch">Lunch:</label>
+            <input type="number" id="Lunch" name="Lunch" min="0" value="0" required>
+        </div>
+        <div>
+            <label for="Dinner">Dinner:</label>
+            <input type="number" id="Dinner" name="Dinner" min="0" value="0" required>
+        </div>
+        <div>
+            <label for="Brunch">Brunch:</label>
+            <input type="number" id="Brunch" name="Brunch" min="0" value="0" required>
+        </div>
+        <input type="submit" value="Calculate Meal Plans">
+    </form>
+
+    <div id="resultsSection" style="display: none;">
+        <div id="outOfPocketResults"></div> 
+        <h2>Meal Plan Results</h2>
+        <div id="mealPlanResults"></div>
+    </div>
+
+    <script src="../static/script.js"></script>
+</body>
+</html>
